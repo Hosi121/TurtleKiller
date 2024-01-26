@@ -6,7 +6,7 @@ public class SkyBox {
 
     private Material material;
     private Mesh mesh;
-    private Entity skyBoxEntity;
+    private Entity skyBoxEntityClass;
     private Model skyBoxModel;
 
     public SkyBox(String skyBoxModelPath, TextureCache textureCache, MaterialCache materialCache) {
@@ -15,7 +15,7 @@ public class SkyBox {
         material = materialCache.getMaterial(meshData.getMaterialIdx());
         mesh = new Mesh(meshData);
         skyBoxModel.getMeshDataList().clear();
-        skyBoxEntity = new Entity("skyBoxEntity-entity", skyBoxModel.getId());
+        skyBoxEntityClass = new Entity("skyBoxEntity-entity", skyBoxModel.getId());
     }
 
     public void cleanuo() {
@@ -31,7 +31,7 @@ public class SkyBox {
     }
 
     public Entity getSkyBoxEntity() {
-        return skyBoxEntity;
+        return skyBoxEntityClass;
     }
 
     public Model getSkyBoxModel() {

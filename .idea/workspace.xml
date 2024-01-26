@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af53e8d1-f102-47bd-82e4-a0e375dbe0be" name="Changes" comment="" />
+    <list default="true" id="af53e8d1-f102-47bd-82e4-a0e375dbe0be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/IEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/graph/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/graph/SceneRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/graph/ShadowRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/graph/ShadowRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/graph/SkyBoxRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/graph/SkyBoxRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/SkyBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/SkyBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/graph/SceneRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/graph/SceneRender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/graph/ShadowRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/graph/ShadowRender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/graph/SkyBoxRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/graph/SkyBoxRender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Scene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/SkyBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/SkyBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/game/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -35,26 +57,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;refactor/Entity&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ia23065/Documents/TurtleKiller&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "feature/Entity",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ia23065/Documents/TurtleKiller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="TurtleKiller" />
@@ -107,6 +130,8 @@
       <workItem from="1706070256303" duration="1984000" />
       <workItem from="1706077171690" duration="858000" />
       <workItem from="1706078053449" duration="101000" />
+      <workItem from="1706152811841" duration="1974000" />
+      <workItem from="1706239161939" duration="10238000" />
     </task>
     <servers />
   </component>

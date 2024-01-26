@@ -27,13 +27,13 @@ public class Scene {
         fog = new Fog();
     }
 
-    public void addEntity(Entity entity) {
-        String modelId = entity.getModelId();
+    public void addEntity(Entity entityClass) {
+        String modelId = entityClass.getModelId();
         Model model = modelMap.get(modelId);
         if (model == null) {
             throw new RuntimeException("Could not find model [" + modelId + "]");
         }
-        model.getEntitiesList().add(entity);
+        model.getEntitiesList().add(entityClass);
     }
 
     public void addModel(Model model) {

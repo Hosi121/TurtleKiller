@@ -15,8 +15,8 @@ public class Main implements IAppLogic {
     private static final float MOUSE_SENSITIVITY = 0.1f;
     private static final float MOVEMENT_SPEED = 0.005f;
 
-    private Entity cubeEntity1;
-    private Entity cubeEntity2;
+    private Entity cubeEntity1Class;
+    private Entity cubeEntity2Class;
     private float lightAngle;
     private float rotation;
 
@@ -39,23 +39,23 @@ public class Main implements IAppLogic {
         Model terrainModel = ModelLoader.loadModel(terrainModelId, "resources/models/terrain/terrain.obj",
                 scene.getTextureCache(), scene.getMaterialCache(), false);
         scene.addModel(terrainModel);
-        Entity terrainEntity = new Entity("terrainEntity", terrainModelId);
-        terrainEntity.setScale(100.0f);
-        terrainEntity.updateModelMatrix();
-        scene.addEntity(terrainEntity);
+        Entity terrainEntityClass = new Entity("terrainEntity", terrainModelId);
+        terrainEntityClass.setScale(100.0f);
+        terrainEntityClass.updateModelMatrix();
+        scene.addEntity(terrainEntityClass);
 
         Model cubeModel = ModelLoader.loadModel("cube-model", "resources/models/cube/cube.obj",
                 scene.getTextureCache(), scene.getMaterialCache(), false);
         scene.addModel(cubeModel);
-        cubeEntity1 = new Entity("cube-entity-1", cubeModel.getId());
-        cubeEntity1.setPosition(0, 2, -1);
-        cubeEntity1.updateModelMatrix();
-        scene.addEntity(cubeEntity1);
+        cubeEntity1Class = new Entity("cube-entity-1", cubeModel.getId());
+        cubeEntity1Class.setPosition(0, 2, -1);
+        cubeEntity1Class.updateModelMatrix();
+        scene.addEntity(cubeEntity1Class);
 
-        cubeEntity2 = new Entity("cube-entity-2", cubeModel.getId());
-        cubeEntity2.setPosition(-2, 2, -1);
-        cubeEntity2.updateModelMatrix();
-        scene.addEntity(cubeEntity2);
+        cubeEntity2Class = new Entity("cube-entity-2", cubeModel.getId());
+        cubeEntity2Class.setPosition(-2, 2, -1);
+        cubeEntity2Class.updateModelMatrix();
+        scene.addEntity(cubeEntity2Class);
 
         render.setupData(scene);
 
@@ -132,10 +132,10 @@ public class Main implements IAppLogic {
         if (rotation > 360) {
             rotation = 0;
         }
-        cubeEntity1.setRotation(1, 1, 1, (float) Math.toRadians(rotation));
-        cubeEntity1.updateModelMatrix();
+        cubeEntity1Class.setRotation(1, 1, 1, (float) Math.toRadians(rotation));
+        cubeEntity1Class.updateModelMatrix();
 
-        cubeEntity2.setRotation(1, 1, 1, (float) Math.toRadians(360 - rotation));
-        cubeEntity2.updateModelMatrix();
+        cubeEntity2Class.setRotation(1, 1, 1, (float) Math.toRadians(360 - rotation));
+        cubeEntity2Class.updateModelMatrix();
     }
 }

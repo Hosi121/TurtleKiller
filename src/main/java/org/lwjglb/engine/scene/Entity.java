@@ -2,7 +2,7 @@ package org.lwjglb.engine.scene;
 
 import org.joml.*;
 
-public class Entity {
+public class Entity implements IEntity {
 
     private final String id;
     private final String modelId;
@@ -66,7 +66,6 @@ public class Entity {
     public void setScale(float scale) {
         this.scale = scale;
     }
-
     public void updateModelMatrix() {
         modelMatrix.translationRotateScale(position, rotation, scale);
     }
