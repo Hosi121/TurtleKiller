@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af53e8d1-f102-47bd-82e4-a0e375dbe0be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/DirtBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/GrassBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/IBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/IEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/IEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +118,7 @@
       <workItem from="1706257959113" duration="5793000" />
       <workItem from="1706330834173" duration="450000" />
       <workItem from="1706336172944" duration="2045000" />
+      <workItem from="1706338347587" duration="880000" />
     </task>
     <servers />
   </component>

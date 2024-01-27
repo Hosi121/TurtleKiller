@@ -67,6 +67,6 @@ public class Entity implements IEntity {
         this.scale = scale;
     }
     public void updateModelMatrix() {
-        modelMatrix.translationRotateScale(position, rotation, scale);
+        modelMatrix.translationRotateScale(position,rotation, scale);
     }
 }
