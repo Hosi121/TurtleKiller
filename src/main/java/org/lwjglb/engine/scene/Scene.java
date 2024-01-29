@@ -12,14 +12,14 @@ public class Scene {
     private Fog fog;
     private IGuiInstance guiInstance;
     private MaterialCache materialCache;
-    private Map<String, Model> modelMap;
+    private Map<String, Model> modelMapClass;
     private Projection projection;
     private SceneLights sceneLights;
     private SkyBox skyBox;
     private TextureCache textureCache;
 
     public Scene(int width, int height) {
-        modelMap = new HashMap<>();
+        modelMapClass = new HashMap<>();
         projection = new Projection(width, height);
         textureCache = new TextureCache();
         materialCache = new MaterialCache();
@@ -29,7 +29,7 @@ public class Scene {
 
     public void addEntity(Entity entityClass) {
         String modelId = entityClass.getModelId();
-        Model model = modelMap.get(modelId);
+        Model model = modelMapClass.get(modelId);
         if (model == null) {
             throw new RuntimeException("Could not find model [" + modelId + "]");
         }
@@ -37,7 +37,7 @@ public class Scene {
     }
 
     public void addModel(Model model) {
-        modelMap.put(model.getId(), model);
+        modelMapClass.put(model.getId(), model);
     }
 
     public Camera getCamera() {
@@ -57,7 +57,7 @@ public class Scene {
     }
 
     public Map<String, Model> getModelMap() {
-        return modelMap;
+        return modelMapClass;
     }
 
 
