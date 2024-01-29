@@ -7,7 +7,7 @@ import org.lwjglb.engine.scene.lights.SceneLights;
 
 import static org.lwjgl.glfw.GLFW.*;
 
-public class InputHandler implements IInputHandler {
+public class InputHandler{
     private static final float MOUSE_SENSITIVITY = 0.1f;
     private static final float MOVEMENT_SPEED = 0.005f;
     private float lightAngle;
@@ -17,7 +17,6 @@ public class InputHandler implements IInputHandler {
         this.initializer = initializer;
         this.lightAngle = 45.001f;
     }
-    @Override
     public void handleInput(Window window, Scene scene, long diffTimeMillis, boolean inputConsumed) {
         if (inputConsumed) {
             return;
