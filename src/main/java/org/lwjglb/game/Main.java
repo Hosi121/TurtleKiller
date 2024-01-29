@@ -20,6 +20,7 @@ public class Main implements IAppLogic {
     private float lightAngle;
     private float rotation;
     private Initializer initializer;
+    private InputHandler inputHandler = new InputHandler();
 
     public static void main(String[] args) {
         Main main = new Main();
@@ -44,44 +45,7 @@ public class Main implements IAppLogic {
 
     @Override
     public void input(Window window, Scene scene, long diffTimeMillis, boolean inputConsumed) {
-        if (inputConsumed) {
-            return;
-        }
-        float move = diffTimeMillis * MOVEMENT_SPEED;
-        Camera camera = scene.getCamera();
-        if (window.isKeyPressed(GLFW_KEY_W)) {
-            camera.moveForward(move);
-        } else if (window.isKeyPressed(GLFW_KEY_S)) {
-            camera.moveBackwards(move);
-        }
-        if (window.isKeyPressed(GLFW_KEY_A)) {
-            camera.moveLeft(move);
-        } else if (window.isKeyPressed(GLFW_KEY_D)) {
-            camera.moveRight(move);
-        }
-        if (window.isKeyPressed(GLFW_KEY_LEFT)) {
-            lightAngle -= 2.5f;
-            if (lightAngle < -90) {
-                lightAngle = -90;
-            }
-        } else if (window.isKeyPressed(GLFW_KEY_RIGHT)) {
-            lightAngle += 2.5f;
-            if (lightAngle > 90) {
-                lightAngle = 90;
-            }
-        }
-
-        MouseInput mouseInput = window.getMouseInput();
-        if (mouseInput.isRightButtonPressed()) {
-            Vector2f displVec = mouseInput.getDisplVec();
-            camera.addRotation((float) Math.toRadians(-displVec.x * MOUSE_SENSITIVITY), (float) Math.toRadians(-displVec.y * MOUSE_SENSITIVITY));
-        }
-
-        SceneLights sceneLights = scene.getSceneLights();
-        DirLight dirLight = sceneLights.getDirLight();
-        double angRad = Math.toRadians(lightAngle);
-        dirLight.getDirection().z = (float) Math.sin(angRad);
-        dirLight.getDirection().y = (float) Math.cos(angRad);
+        inputHandler.handleInput(window, scene, diffTimeMillis, inputConsumed);
     }
 
     @Override
