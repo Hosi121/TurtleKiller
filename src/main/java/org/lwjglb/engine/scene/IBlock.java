@@ -6,5 +6,4 @@ public interface IBlock {
     float getBlockScale();
     void setBlockScale(float scale);
     void breakBlock();
-
 }
