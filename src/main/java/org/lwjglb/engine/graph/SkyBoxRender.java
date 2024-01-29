@@ -54,7 +54,7 @@ public class SkyBoxRender {
         uniformsMap.setUniform("viewMatrix", viewMatrix);
         uniformsMap.setUniform("txtSampler", 0);
 
-        Entity skyBoxEntity = skyBox.getSkyBoxEntity();
+        Entity skyBoxEntityClass = skyBox.getSkyBoxEntity();
         TextureCache textureCache = scene.getTextureCache();
         Material material = skyBox.getMaterial();
         Mesh mesh = skyBox.getMesh();
@@ -67,7 +67,7 @@ public class SkyBoxRender {
 
         glBindVertexArray(mesh.getVaoId());
 
-        uniformsMap.setUniform("modelMatrix", skyBoxEntity.getModelMatrix());
+        uniformsMap.setUniform("modelMatrix", skyBoxEntityClass.getModelMatrix());
         glDrawElements(GL_TRIANGLES, mesh.getNumVertices(), GL_UNSIGNED_INT, 0);
 
         glBindVertexArray(0);

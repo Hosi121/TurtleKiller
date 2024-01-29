@@ -92,8 +92,8 @@ public class SceneRender {
         int entityIdx = 0;
         for (Model model : scene.getModelMap().values()) {
             List<Entity> entities = model.getEntitiesList();
-            for (Entity entity : entities) {
-                uniformsMap.setUniform("modelMatrices[" + entityIdx + "]", entity.getModelMatrix());
+            for (Entity entityClass : entities) {
+                uniformsMap.setUniform("modelMatrices[" + entityIdx + "]", entityClass.getModelMatrix());
                 entityIdx++;
             }
         }
@@ -106,9 +106,9 @@ public class SceneRender {
             }
             List<Entity> entities = model.getEntitiesList();
             for (RenderBuffers.MeshDrawData meshDrawData : model.getMeshDrawDataList()) {
-                for (Entity entity : entities) {
+                for (Entity entityClass : entities) {
                     String name = "drawElements[" + drawElement + "]";
-                    uniformsMap.setUniform(name + ".modelMatrixIdx", entitiesIdxMap.get(entity.getId()));
+                    uniformsMap.setUniform(name + ".modelMatrixIdx", entitiesIdxMap.get(entityClass.getId()));
                     uniformsMap.setUniform(name + ".materialIdx", meshDrawData.materialIdx());
                     drawElement++;
                 }
@@ -134,8 +134,8 @@ public class SceneRender {
         int entityIdx = 0;
         for (Model model : scene.getModelMap().values()) {
             List<Entity> entities = model.getEntitiesList();
-            for (Entity entity : entities) {
-                entitiesIdxMap.put(entity.getId(), entityIdx);
+            for (Entity entityClass : entities) {
+                entitiesIdxMap.put(entityClass.getId(), entityIdx);
                 entityIdx++;
             }
         }
