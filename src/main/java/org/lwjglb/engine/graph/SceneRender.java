@@ -11,8 +11,8 @@ import static org.lwjgl.opengl.GL43.*;
 
 public class SceneRender {
 
-    public static final int MAX_DRAW_ELEMENTS = 100;
-    public static final int MAX_ENTITIES = 50;
+    public static final int MAX_DRAW_ELEMENTS = 512;
+    public static final int MAX_ENTITIES = 250;
     private static final int COMMAND_SIZE = 5 * 4;
     private static final int MAX_MATERIALS = 20;
     private static final int MAX_TEXTURES = 16;
