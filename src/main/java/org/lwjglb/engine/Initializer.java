@@ -1,5 +1,8 @@
 package org.lwjglb.engine;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.lwjglb.engine.graph.Model;
 import org.lwjglb.engine.scene.ModelLoader;
 import org.lwjglb.engine.graph.Render;
@@ -11,6 +14,15 @@ import org.lwjglb.engine.scene.Camera;
 import org.lwjglb.engine.scene.Entity;
 import org.lwjglb.engine.scene.Scene;
 import org.lwjglb.engine.Window;
+import org.lwjglb.engine.IInitializer;
+import org.joml.Vector3f;
+import org.lwjglb.engine.Utils;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
 
 
 public class Initializer implements IInitializer{
@@ -18,6 +30,7 @@ public class Initializer implements IInitializer{
     private Scene scene;
     private Render render;
     private Window window;
+
 
     public Initializer(Window window, Scene scene, Render render) {
         this.window = window;
@@ -45,21 +58,38 @@ public class Initializer implements IInitializer{
         scene.addEntity(terrainEntityClass);
     }
 
-    @Override
     public void initCubes(Scene scene) {
-        Model cubeModel = ModelLoader.loadModel("cube-model", "resources/models/cube/cube.obj",
-                scene.getTextureCache(), scene.getMaterialCache(), false);
-        scene.addModel(cubeModel);
-        Entity cubeEntity1Class = new Entity("cube-entity-1", cubeModel.getId());
-        cubeEntity1Class.setPosition(0, 2, -1);
-        cubeEntity1Class.updateModelMatrix();
-        scene.addEntity(cubeEntity1Class);
+        try {
+            String content = Utils.readFile("resources/Maps.json");
+            JSONArray jsonArray = new JSONArray(content);
 
-        Entity cubeEntity2Class = new Entity("cube-entity-2", cubeModel.getId());
-        cubeEntity2Class.setPosition(-2, 2, -1);
-        cubeEntity2Class.updateModelMatrix();
-        scene.addEntity(cubeEntity2Class);
+            Model cubeModel = ModelLoader.loadModel("cube-model", "resources/models/cube/cube.obj",
+                    scene.getTextureCache(), scene.getMaterialCache(), false);
+            scene.addModel(cubeModel);
+
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                String cubeID = jsonObject.getString("id");
+                JSONArray posArray = jsonObject.getJSONArray("position");
+                float x = posArray.getInt(0);
+                float y = posArray.getInt(1);
+                float z = posArray.getInt(2);
+
+                // Entityの生成と設定
+                Entity cubeEntity = new Entity(cubeID, cubeModel.getId());
+                cubeEntity.setPosition(x, y, z);
+                cubeEntity.updateModelMatrix();
+
+                // SceneにEntityを追加
+                scene.addEntity(cubeEntity);
+            }
+        } catch (JSONException e) {
+            // JSON解析時の例外処理
+            e.printStackTrace();
+            // 必要に応じて処理
+        }
     }
+
 
     @Override
     public void initLighting(Scene scene) {
