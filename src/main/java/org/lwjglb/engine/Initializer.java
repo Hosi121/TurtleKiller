@@ -1,8 +1,5 @@
 package org.lwjglb.engine;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.lwjglb.engine.graph.Model;
 import org.lwjglb.engine.scene.ModelLoader;
 import org.lwjglb.engine.graph.Render;
@@ -13,16 +10,7 @@ import org.lwjglb.engine.scene.lights.SceneLights;
 import org.lwjglb.engine.scene.Camera;
 import org.lwjglb.engine.scene.Entity;
 import org.lwjglb.engine.scene.Scene;
-import org.lwjglb.engine.Window;
-import org.lwjglb.engine.IInitializer;
-import org.joml.Vector3f;
-import org.lwjglb.engine.Utils;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
+import org.lwjglb.engine.scene.GameMap;
 
 
 public class Initializer implements IInitializer{
@@ -37,14 +25,17 @@ public class Initializer implements IInitializer{
         this.scene = scene;
         this.render = render;
         initTerrain(scene);
-        initCubes(scene);
+        initMap(scene);
         initLighting(scene);
         initSkybox(scene);
         initCamera(scene, window);
     }
     @Override
     public void initMap(Scene scene) {
-        render.setupData(scene);
+        GameMap gameMap = new GameMap("resources/Maps.json", scene);
+        for (Entity cubeEntity : gameMap.getEntities()) {
+            scene.addEntity(cubeEntity);
+        }
     }
     @Override
     public void initTerrain(Scene scene) {
@@ -57,39 +48,6 @@ public class Initializer implements IInitializer{
         terrainEntityClass.updateModelMatrix();
         scene.addEntity(terrainEntityClass);
     }
-
-    public void initCubes(Scene scene) {
-        try {
-            String content = Utils.readFile("resources/Maps.json");
-            JSONArray jsonArray = new JSONArray(content);
-
-            Model cubeModel = ModelLoader.loadModel("cube-model", "resources/models/cube/cube.obj",
-                    scene.getTextureCache(), scene.getMaterialCache(), false);
-            scene.addModel(cubeModel);
-
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jsonObject = jsonArray.getJSONObject(i);
-                String cubeID = jsonObject.getString("id");
-                JSONArray posArray = jsonObject.getJSONArray("position");
-                float x = posArray.getInt(0);
-                float y = posArray.getInt(1);
-                float z = posArray.getInt(2);
-
-                // Entityの生成と設定
-                Entity cubeEntity = new Entity(cubeID, cubeModel.getId());
-                cubeEntity.setPosition(x, y, z);
-                cubeEntity.updateModelMatrix();
-
-                // SceneにEntityを追加
-                scene.addEntity(cubeEntity);
-            }
-        } catch (JSONException e) {
-            // JSON解析時の例外処理
-            e.printStackTrace();
-            // 必要に応じて処理
-        }
-    }
-
 
     @Override
     public void initLighting(Scene scene) {

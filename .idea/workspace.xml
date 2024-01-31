@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af53e8d1-f102-47bd-82e4-a0e375dbe0be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+ refactor/map
+    "git-widget-placeholder": "refactor/map",
     "git-widget-placeholder": "refactor/window",
+ develop
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ia23065/Documents/TurtleKiller",
     "node.js.detected.package.eslint": "true",
