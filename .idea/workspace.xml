@@ -8,9 +8,13 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/GameMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+ refactor/map
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/IInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/IInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Initializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Initializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" afterDir="false" />
+ develop
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+ refactor/map
     "git-widget-placeholder": "refactor/map",
+    "git-widget-placeholder": "refactor/window",
+ develop
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ia23065/Documents/TurtleKiller",
     "node.js.detected.package.eslint": "true",
@@ -131,7 +138,8 @@
       <workItem from="1706514943406" duration="4110000" />
       <workItem from="1706538491005" duration="3704000" />
       <workItem from="1706542317975" duration="330000" />
-      <workItem from="1706597135546" duration="20774000" />
+      <workItem from="1706597135546" duration="22256000" />
+      <workItem from="1706684727281" duration="4801000" />
     </task>
     <servers />
   </component>

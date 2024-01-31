@@ -25,6 +25,8 @@ public class Main implements IAppLogic {
     public static void main(String[] args) {
         Main main = new Main();
         Window.WindowOptions opts = new Window.WindowOptions();
+        opts.width = 1200;
+        opts.height = 700;
         opts.antiAliasing = true;
         Engine gameEng = new Engine("TurtleKiller", opts, main);
         gameEng.start();
