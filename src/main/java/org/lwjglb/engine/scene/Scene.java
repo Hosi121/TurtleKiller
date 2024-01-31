@@ -34,6 +34,17 @@ public class Scene {
             throw new RuntimeException("Could not find model [" + modelId + "]");
         }
         model.getEntitiesList().add(entityClass);
+        System.out.println(model.getEntitiesList());
+    }
+
+    public void removeEntity(Entity entityClass){
+        String modelId = entityClass.getModelId();
+        Model model = modelMap.get(modelId);
+        if (model == null) {
+            throw new RuntimeException("Could not find model [" + modelId + "]");
+        }
+        model.getEntitiesList().remove(entityClass);
+        System.out.println(model.getEntitiesList());
     }
 
     public void addModel(Model model) {

@@ -1,6 +1,7 @@
 package org.lwjglb.game;
 
 import org.joml.*;
+import java.util.List;
 import org.lwjglb.engine.*;
 import org.lwjglb.engine.graph.*;
 import org.lwjglb.engine.scene.*;
@@ -39,7 +40,6 @@ public class Main implements IAppLogic {
     public void init(Window window, Scene scene, Render render) {
         initializer = new Initializer(window, scene, render);
         render.setupData(scene);
-
         lightAngle = 45.001f;
     }
 
@@ -49,6 +49,6 @@ public class Main implements IAppLogic {
     }
 
     @Override
-    public void update(Window window, Scene scene, long diffTimeMillis) {
+    public void update(Window window, Scene scene, long diffTimeMillis){
     }
 }

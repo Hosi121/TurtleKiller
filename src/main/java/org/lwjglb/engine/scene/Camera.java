@@ -34,6 +34,9 @@ public class Camera {
     public Vector3f getPosition() {
         return position;
     }
+    public Vector3f getDirection() {
+        return direction;
+    }
 
     public Matrix4f getViewMatrix() {
         return viewMatrix;

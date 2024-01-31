@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af53e8d1-f102-47bd-82e4-a0e375dbe0be" name="Changes" comment="" />
+    <list default="true" id="af53e8d1-f102-47bd-82e4-a0e375dbe0be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/models/skybox/skybox.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/models/skybox/skybox.mtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/IAppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/IAppLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Initializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/InputHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/InputHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/scene/Scene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/game/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

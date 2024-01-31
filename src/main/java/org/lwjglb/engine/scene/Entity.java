@@ -21,6 +21,15 @@ public class Entity implements IEntity {
         scale = 1;
     }
 
+    @Override
+    public String toString() {
+        return "Entity{" +
+                "id='" + id + '\'' +
+                ", position=" + position +
+                // 他の重要なフィールドをここに追加
+                '}';
+    }
+
     public AnimationData getAnimationData() {
         return animationData;
     }
