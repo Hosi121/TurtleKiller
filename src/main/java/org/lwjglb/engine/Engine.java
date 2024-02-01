@@ -1,6 +1,7 @@
 package org.lwjglb.engine;
 
 import org.lwjglb.engine.graph.Render;
+import org.lwjglb.engine.scene.Camera;
 import org.lwjglb.engine.scene.Scene;
 
 public class Engine {
@@ -13,6 +14,7 @@ public class Engine {
     private Scene scene;
     private int targetFps;
     private int targetUps;
+    private Camera camera;
 
     public Engine(String windowTitle, Window.WindowOptions opts, IAppLogic appLogic) {
         window = new Window(windowTitle, opts, () -> {

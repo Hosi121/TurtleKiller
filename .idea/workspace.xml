@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af53e8d1-f102-47bd-82e4-a0e375dbe0be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/scene/GameMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sounds/bgm1.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/IInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/IInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/engine/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lwjglb/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/engine/Initializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lwjglb/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lwjglb/game/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="refactor/inputhandler" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -47,10 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
- refactor/map
-    "git-widget-placeholder": "refactor/map",
-    "git-widget-placeholder": "refactor/window",
- develop
+    "git-widget-placeholder": "feature/musicPlayer",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ia23065/Documents/TurtleKiller",
     "node.js.detected.package.eslint": "true",
