@@ -1,5 +1,6 @@
 package org.lwjglb.engine;
 
+import org.lwjgl.openal.AL11;
 import org.lwjglb.engine.graph.Model;
 import org.lwjglb.engine.scene.ModelLoader;
 import org.lwjglb.engine.graph.Render;
@@ -11,13 +12,16 @@ import org.lwjglb.engine.scene.Camera;
 import org.lwjglb.engine.scene.Entity;
 import org.lwjglb.engine.scene.Scene;
 import org.lwjglb.engine.scene.GameMap;
-
+import org.lwjglb.engine.sound.*;
+import org.joml.Vector3f;
 
 public class Initializer implements IInitializer{
 
     private Scene scene;
     private Render render;
     private Window window;
+    private SoundSource playerSoundSource;
+    private SoundManager soundMgr;
 
 
     public Initializer(Window window, Scene scene, Render render) {
@@ -79,4 +83,24 @@ public class Initializer implements IInitializer{
         camera.addRotation((float) Math.toRadians(15.0f), (float) Math.toRadians(390.f));
     }
 
+//    @Override
+//    public void initSounds(Vector3f position, Camera camera) {
+//        soundMgr = new SoundManager();
+//        soundMgr.setAttenuationModel(AL11.AL_EXPONENT_DISTANCE);
+//        soundMgr.setListener(new SoundListener(camera.getPosition()));
+//
+//        SoundBuffer buffer = new SoundBuffer("resources/sounds/creak1.ogg");
+//        soundMgr.addSoundBuffer(buffer);
+//        playerSoundSource = new SoundSource(false, false);
+//        playerSoundSource.setPosition(position);
+//        playerSoundSource.setBuffer(buffer.getBufferId());
+//        soundMgr.addSoundSource("CREAK", playerSoundSource);
+//
+//        buffer = new SoundBuffer("resources/sounds/bgm.ogg");
+//        soundMgr.addSoundBuffer(buffer);
+//        SoundSource source = new SoundSource(true, true);
+//        source.setBuffer(buffer.getBufferId());
+//        soundMgr.addSoundSource("MUSIC", source);
+//        source.play();
+//    }
 }
